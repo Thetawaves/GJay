@@ -16,12 +16,51 @@ html, body {
     height: 100%;
 }
 
+#scroll {
+    width: 300px;
+    position: fixed;
+    z-index: 11;
+    bottom: 0;
+    left: 50%;
+    margin-left: -150px;
+}
+
+#scroll #line-wrap {
+    height: 30px;
+    width: 100%;
+    position: relative;;
+}
+
+#scroll #line-wrap #scroll-line {
+    position: absolute;
+    height: 30px;
+    width: 2px;
+    border-radius: 2px;
+    animation: scroll-motion 1s linear infinite;
+    margin-left: 50%;
+    background-color: #fff;
+}
+
+@keyframes scroll-motion {
+    0% {height: 0}
+    50% {height: 30px}
+    100% {height: 0; bottom: 0; top: auto}
+}
+
+#scroll p {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
 #background {
     height: 100%;
     width: 100%;
     position: relative;
     background-color: #1d3d63;
     border-top: 1px solid #1d3d63;
+    overflow-x: hidden;
 }
 
 #background #gradient {
@@ -82,23 +121,46 @@ html, body {
 }
 
 #diamonds-wrap {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: firebrick;
-    top: 50%;
+    height: 400px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 #diamonds-wrap .diamond {
-    height: 50vh;
-    width: 50vh;
     position: absolute;
-    transform: rotate(45deg) translateX(-50vh);
-    transform-origin: 0 100%;
-    left: 50%;
-    top: 0;
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    width: 50%;
+    left: 200px;
+}
+
+#diamonds-wrap .diamond:nth-child(1) {
+    z-index: 10;
+    background-color: rgba(0, 255, 198, 0.5);
+}
+
+#diamonds-wrap #center-diamond {
+    background-color: #00FFC6;
+    z-index: 8;
 }
 
 #diamonds-wrap .mini {
-    
+    background-color: #e1e1e1;
+    z-index: 9;
+    width: 25%;
+    top: 100px;
+    left: 10px;
+}
+
+#diamonds-wrap .diamond:nth-child(3) {
+    position: absolute;
+    right: 10px;
+    left: auto;
+}
+
+section {
+    height: 100%;
+    width: 100%;
 }
