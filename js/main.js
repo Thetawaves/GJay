@@ -1,21 +1,32 @@
 $(document).ready(function () {
-    var l = $('.diamond').width();
-    var lMini = $('#diamonds-wrap .mini').width();
-    $('.diamond').css({height:l});
-    $('#diamonds-wrap .mini').css({height:lMini});
-    $(window).resize(function () {
-        l = $('.diamond').width();
-        lMini = $('#diamonds-wrap .mini').width();
-        $('.diamond').css({height:l});
-        $('#diamonds-wrap .mini').css({height:lMini});
-    });
     
     $(window).on('scroll', function () {
         var scrollo = $(window).scrollTop();
         if (scrollo > 10) {
-            $('#scroll').fadeOut()
+            $('#scroll').fadeOut();
+            $('#diamonds-wrap p').delay(5000).fadeOut()
         } else {
-            $('#scroll').fadeIn()
+            $('#scroll').fadeIn();
+            $('#diamonds-wrap p').show();
         }
     });
+    
+    var content = ['wireframes.html', 'patterns.html', 'doodles.html', 'photoshop.html'];
+    
+    $('.grid li').click(function () {
+        var liNr = $(this).index();
+        $('#content-loader').animate({
+            height: '0'
+        }, 500, function () {
+            $('#content-loader').load(content[liNr]);
+        });
+        $('#content-loader').animate({
+            height: '500px'
+        }, 500);
+        var loaderPos = $('#content-loader').offset().top;
+        $('body').animate({
+            scrollTop: loaderPos - 50
+        }, 1000);
+    });
+    
 })
