@@ -1,130 +1,170 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <meta name="description" content="Jessica GJ Granziera Web Designer based in London">
+    <meta name="keywords" content="Jessica Granziera, GJ, GJessica, GJay, HTML, CSS, JavaScript, jQuery, Web Design, UI, UX, London, responsive, Sketch app, Photoshop, Illustrator">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="icon" type="image/ico" href="img/icons/GJ_icon_XS.png" />
+    <link rel="icon" type="image/ico" href="img/icons/Artboard%202.png" />
     <title>GJ | Web Designer</title>
 </head>
 <body>
-    <div id="scroll">
-        <div id="line-wrap">
-            <div id="scroll-line"></div>
+    <div id="side-menu">
+        <div id="hamburger">
+            <div class="line" id="top"></div>
+            <p id="menu">ME<span></span>NU</p>
+            <div class="line" id="mid"></div>
+            <div class="line" id="bot"></div>
         </div>
-        <p>Scroll<br />(or don't,<br />I'm not your boss)</p>
+        <ul>
+            <li>
+                <a href="#services">What I do</a>
+                <div class="text-animation" id="hover-first"></div>
+                <div class="text-animation" id="hover-second"></div>
+            </li>
+            <li>
+                <a href="#bio">About Me</a>
+                <div class="text-animation" id="hover-first"></div>
+                <div class="text-animation" id="hover-second"></div>
+            </li>
+            <li>
+                <a href="#portfolio">My Skills</a>
+                <div class="text-animation" id="hover-first"></div>
+                <div class="text-animation" id="hover-second"></div>
+            </li>
+            <li>
+                <a href="#contact">Contacts</a>
+                <div class="text-animation" id="hover-first"></div>
+                <div class="text-animation" id="hover-second"></div>
+            </li>
+        </ul>
     </div>
-    <div id="background">
-        <div id="gradient"></div>
-        <div id="zig-zag"></div>
-        <div id="welcome">
-            <p>Welcome to <span id="flash">GJay's</span> world!<br />Please take off your shoes<br />
-        before entering.</p>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="img/icons/Artboard%202@2x.png" />
+            </div>
+            <ul>
+                <li>
+                    <a href="#services" class="scroll">What I do</a>
+                    <div class="text-animation" id="hover-first"></div>
+                    <div class="text-animation" id="hover-second"></div>
+                </li>
+                <li>
+                    <a href="#bio" class="scroll">About Me</a>
+                    <div class="text-animation" id="hover-first"></div>
+                    <div class="text-animation" id="hover-second"></div>
+                </li>
+                <li>
+                    <a href="#portfolio" class="scroll">My Skills</a>
+                    <div class="text-animation" id="hover-first"></div>
+                    <div class="text-animation" id="hover-second"></div>
+                </li>
+                <li>
+                    <a href="#contact" class="scroll">Contacts</a>
+                    <div class="text-animation" id="hover-first"></div>
+                    <div class="text-animation" id="hover-second"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="services">
+        <h1>My Process</h1>
+        <div id="card-holder">
+            <div class="card">
+                <div class="thumb">
+                    <img id="one" src="img/icons/Artboard%204%20Copy%203.png" />
+                </div>
+                <div class="text">
+                    <h2>Tons of Brain Activity</h2>
+                    <p>This is the part where I listen and listen and listen to the client's needs, expectations. Hopes and dreams. Likes and dislikes. Where my brain tries to sync with the client's.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumb">
+                    <img id="two" src="img/icons/Artboard%204.png" />
+                </div>
+                <div class="text">
+                    <h2>A fair amount of Drawing</h2>
+                    <p>This is where the information that was previously stored is processed through sketches and doodles. The sketches get then refined into a finer work to show to the client.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumb">
+                    <img id="three" src="img/icons/Artboard%204%20Copy%204.png" />
+                </div>
+                <div class="text">
+                    <h2>A LOT of Typing</h2>
+                    <p>Finally, when the doodles become mockups, my favourite part begins: the coding. A drawing becomes an intricate mix of languages to give the client the website that fits his/her needs.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
     <section id="bio">
-        <div id="diamonds-wrap">
-            <div class="diamond"></div>
-            <div class="diamond" id="center-diamond"></div>
-            <div class="diamond mini" id="left-diamond"></div>
-            <div class="diamond mini" id="right-diamond"></div>
-            <p>You scrolled! <br /> Yay!</p>
+        <div id="photo-wrap">
+            <div id="thumb">
+                <img src="img/GJ_self_portrait.png" />
+            </div>
         </div>
         <div id="bio-wrap">
-            <h1>What is a <span id="flash">GJay</span>?</h1>
-            <p>/d&#658;i&#720;-d&#658;e&#618;/ <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus. Felis eget nunc lobortis mattis. Lorem donec massa sapien faucibus et. Tortor at auctor urna nunc id cursus. Purus gravida quis blandit turpis. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Eu lobortis elementum nibh tellus molestie. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Elit eget gravida cum sociis natoque penatibus et magnis. A condimentum vitae sapien pellentesque. Purus viverra accumsan in nisl nisi. Lectus mauris ultrices eros in cursus turpis massa. Sed arcu non odio euismod lacinia at quis risus. Amet commodo nulla facilisi nullam. Ultrices dui sapien eget mi proin sed libero enim. Cursus in hac habitasse platea dictumst.</p>
+            <h1>Hello!<br />This is Jessica 'GJ' Granziera</h1>
+            <p>She was born in Venice in 1988.<br />She's always shown a passion for interactive things of any kind so games, videogames and basically anything on a computer. HTML, CSS, JavaScript, etc are as interactive as it gets so how could she not be passionate about them.<br />While the passion for videogames goes a long way back (when she would beg her brother to let her play GTA on his PC) her passion for web design is more recent. Her friend <a href="http://alexdemitri.com/">Alex Demitri</a>, introduced her to the coding world in 2015 and she was immediately captured by it.<br />Since then she has attended the Web Design class at the <a href="http://www.scuolacomics.com/sedi/padova/">International School of Comics</a> under the teachings of Creative Designer <a href="http://www.simoneceli.com/">Simone Celi</a>. As soon as she finished her studies she moved to London, where she currently resides, in hopes to make her dream of becoming a web designer come true.<br />People say that she likes to write about herself, but I like to think of her as the girl with multiple personalities, one of which is writing this bio.</p>
         </div>
     </section>
     <section id="portfolio">
-        <h1>What does a <span id="flash">GJay</span> Do?</h1>
-        <div id="zig-zag"></div>
-        <div id="zig-zag-background"></div>
-        <div id="diamond-wrapper">
-            <ul class="grid">
-                <li>
-                    <div class="show show1"></div>
-                    <div class="description">
-                        <p><span>Wireframes</span><br />
-                            Some of my website ideas,<br />
-                            developed or not.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="show show2"></div>
-                    <div class="description">
-                        <p><span>Icons</span><br />
-                            Small Icons I've made<br />
-                            through Sketch app.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="show show3"></div>
-                    <div class="description">
-                        <p><span>Doodles</span><br />
-                            Everything<br />
-                            and anything else.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="show show4"></div>
-                    <div class="description">
-                        <p><span>Photoshop</span><br />
-                            Picture adjustments<br />
-                            and animations.
-                        </p>
-                    </div>
-                </li>
+        <div id="skills-title">
+            <h1>My Skills*</h1>
+            <p>*That will one day pay the bills</p>
+        </div>
+        <div id="skills-container">
+            <div id="lines">
+                <div class="skill-level" id="one"><p>Over Nine Thousand</p></div>
+                <div class="skill-level" id="two"><p>Pretty Awesome</p></div>
+                <div class="skill-level" id="three"><p>Not bad</p></div>
+                <div class="skill-level" id="four"><p>Basic</p></div>
+            </div>
+            <div id="bars">
+                <div class="skill-bar" id="bar0" bar-height="250px"></div>
+                <div class="skill-bar" id="bar1" bar-height="200px"></div>
+                <div class="skill-bar" id="bar2" bar-height="150px"></div>
+                <div class="skill-bar" id="bar3" bar-height="90px"></div>
+                <div class="skill-bar" id="bar4" bar-height="140px"></div>
+                <div class="skill-bar" id="bar5" bar-height="220px"></div>
+                <div class="skill-bar" id="bar6" bar-height="135px"></div>
+                <div class="skill-bar" id="bar7" bar-height="240px"></div>
+            </div>
+            <ul>
+                <li>HTML5/CSS3</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+                <li>WordPress</li>
+                <li>Photoshop</li>
+                <li>Sketch</li>
+                <li>Illustrator</li>
+                <li>Videogames</li>
             </ul>
         </div>
     </section>
-    <section id="content-loader">
-    </section>
     <section id="contact">
-        <h1>Now I want more!</h1>
-        <p>You can find the GJay pretty much anywhere, choose your favourite tool.</p>
-        <div id="socials">
-            <div class="icon">
-                <a href="mailto:jessica.granziera@gmail.com?Subject=Hello%20Jessica" target="_top"><img src="img/icons/mail.png" /></a>
-            </div>
-            <div class="icon">
-                <a href="https://www.facebook.com/jessica.granziera.5" target="_blank"><img src="img/icons/facebook.png" /></a>
-            </div>
-            <div class="icon">
-                <a href="https://github.com/Thetawaves" target="_blank"><img src="img/icons/github.png" /></a>
-            </div>
-            <div class="icon">
-                <a href="https://www.instagram.com/rugiada117/" target="_blank"><img src="img/icons/instagram.png" /></a>
-            </div>
-            <div class="icon">
-                <a href="https://twitter.com/Thetawaves3006" target="_blank"><img src="img/icons/twitter.png" /></a>
-            </div>
-            <div class="icon">
-                <a href="https://www.linkedin.com/in/jessicagranziera/" target="_blank"><img src="img/icons/linkedin.png" /></a>
-            </div>
-            <div class="icon">
-                <a href="tel:+447592334483"><img src="img/icons/telephone.png" /></a>
-            </div>
-            <div class="icon">
-                <a href="https://plus.google.com/107805679060384864676" target="_blank"><img src="img/icons/google+.png" /></a>
-            </div>
-            <div class="icon">
-                <a href="skype:rugiada117?call"><img src="img/icons/skype.png" /></a>
-            </div>
-        </div>
+        
     </section>
     <footer>
-        <div id="stripe">
-            <p>< / > with&nbsp;</p>
-            <div>
-                <img src="img/icons/Brain.png" />
-            </div>
-            <p>&nbsp;(both emispheres) by&nbsp;</p>
-            <div>
-                <img src="img/icons/GJ_icon_S.png" />
-            </div>
-        </div>
+        <ul id="socials">
+            <li class="icon">
+                <a href="mailto:jessica.granziera@gmail.com?Subject=Hello%20Jessica" target="_top"><img src="img/icons/001-envelope.svg" /></a>
+            </li>
+            <li class="icon">
+                <a href="https://github.com/Thetawaves" target="_blank"><img src="img/icons/006-github-logo.svg" /></a>
+            </li>
+            <li class="icon">
+                <a href="https://www.linkedin.com/in/jessicagranziera/" target="_blank"><img src="img/icons/005-linkedin-logo.svg" /></a>
+            </li>
+            <li class="icon">
+                <a href="tel:+447763687617"><img src="img/icons/003-social.svg" /></a>
+            </li>
+        </ul>
+        <p>< / > with <img src="img/icons/Brain.svg" /> (both emispheres) by GJ</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
